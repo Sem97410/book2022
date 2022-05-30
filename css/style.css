@@ -29,6 +29,18 @@ body {
   -font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
+
+h1{
+  font-family: "Champagne & Limousines Bold";
+}
+
+h2,h3,h4,h5,h6{
+  font-family: "OptimusPrinceps";
+}
+
+p{
+  font-family: "CaslonCP";
+}
 body {
   font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
   /* color: #fff; */
