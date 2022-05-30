@@ -34,13 +34,15 @@ h1{
   font-family: "Champagne & Limousines Bold";
 }
 
-h2,h3,h4,h5,h6{
+h2{
   font-family: "OptimusPrinceps";
 }
-
-p{
-  font-family: "CaslonCP";
+h3,h4,h5,h6{
+  font-family :"Comfortaa-Bold";
 }
+p{
+  font-family: "Amaline Trial";
+} 
 body {
   font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
   /* color: #fff; */
