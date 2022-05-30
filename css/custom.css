@@ -1,0 +1,272 @@
+.bold{
+  font-weight: bold;
+}
+.italic{
+  font-style: italic;
+}
+
+.noMarginTop{
+  margin-top: 0;
+ 
+}
+
+/* 3D Cube portefolio */
+.cube {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(240deg) rotateY(-5deg) rotateZ(-155deg);
+}
+
+.side {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 10%;
+}
+
+.top {
+  transform: translateZ(-60px);
+  background: grey;
+}
+
+.front {
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  background: grey;
+}
+
+.left {
+  width: 120px;
+  transform: translateZ(-120px) rotateY(90deg);
+  transform-origin: right;
+  background: grey;
+}
+.right {
+  width: 60px;
+  transform: translateZ(-120px) rotateY(-90deg);
+  transform-origin: left;
+  background: grey;
+}
+
+
+.run-rotation {
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.run-rotation:hover {
+    animation: run-rotation 5s linear infinite;
+}
+@keyframes run-rotation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotation3d {
+  background: #eaeaed;
+  float: center;
+}
+
+
+/* IMAGE EPINGLEE */
+.nail{
+  margin-top: 0rem;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius : 50%;
+  background: deepskyblue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: hangingRotate 3s linear infinite;
+
+}
+.nail::after{
+  content:"";
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  background-color: deepskyblue;
+  height: 50px;
+  width: 5px;
+  z-index: -1;
+}
+.nail::before{
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  background-color: deepskyblue;
+  height: 50px;
+  width: 5px;
+  z-index: -1;
+}
+
+.hangling-image{
+  height: 360px;
+  width: 260px;
+  cursor: pointer;
+  z-index: 10;
+  margin-top: 3rem;
+}
+
+.hangling-image img{
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+@keyframes hangingRotate{
+  0%,
+  100%{
+    transform: rotate(5deg);
+  }
+  25%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-5deg);
+  }
+}
+
+
+/* LightScreen effect */
+
+.shadowBtn{
+  width: 120px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.shadowBtn:hover{
+  background-color: white;
+  color: black;
+  transition: 1s ease;
+}
+
+.shadowBtn::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background: transparent;
+  height: 50%;
+  width: 100%;
+  transform: perspective(1em)
+  rotateX(40deg) scale(1,0.35);
+  filter: blur(6px);
+  transition: 1s ease;
+}
+
+.shadowBtn:hover::before{
+  background: white;
+  top: 70px;
+}
+
+
+ .maxSize{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+} 
+
+/* Page annexes  */
+
+.noDec{
+  list-style: none;
+}
+
+#col{
+  column-width: 100px;
+  column-count: 2;
+  color:red;
+}
+
+
+
+/* MISE EN PAGE PRATIQUE */
+
+.row-reverse{
+  display:-ms-flexbox;
+  display:flex;
+  flex-direction: row-reverse;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:-15px;
+  margin-left:-15px
+}
+
+.textBG{
+  /*background-color:rgba(49, 75, 102, 1);*/ /*Dark blue*/
+  /* background-color: rgba(110, 170, 230, 0.7); light blue */
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+  border-radius: 1%;
+  /* border: 10px solid rgba(0, 0, 0, 0.1) */
+}
+
+.alinea{
+  text-indent: 20px;
+}
+
+/* Title */
+.leftPos{
+  text-align: left;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.justify{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.twoColumn{
+  column-count: 2;
+}
+
+.fourColumn{
+  column-count: 4;
+  column-gap: 50px;
+}
+
+.full{
+  max-width: 100%;
+  width: 100%;
+}
+.radius{
+  border-radius: 10%;
+}
+h2{
+  font-weight: bold;
+
+}
+
+.black{
+  color:black;
+}
