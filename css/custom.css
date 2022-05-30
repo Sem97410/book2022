@@ -249,6 +249,9 @@
 .twoColumn{
   column-count: 2;
 }
+.threeColumn{
+  column-count: 3;
+}
 
 .fourColumn{
   column-count: 4;
@@ -270,4 +273,5 @@ h2{
 .black{
   color:black;
 }
+
 
