@@ -596,7 +596,7 @@ a#logo {
     width: 12px;
     height: 12px;
     margin: 0 5px;
-    background: rgba(255, 255, 255, .2)
+    background: #4096ee;
 }
 
 .owl-carousel .owl-dots .owl-dot:focus {
@@ -604,7 +604,7 @@ a#logo {
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-    background: #fff
+    background: black
 }
 
 /*==============================================
