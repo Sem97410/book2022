@@ -240,6 +240,10 @@
   display: flex;
   flex-direction: row;
 }
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
 
 .justify{
   text-align: justify;
